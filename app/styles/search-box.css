@@ -1,0 +1,21 @@
+.searchBox {
+    padding: 20px 15px;
+    text-align: center;
+    background: #6C7A89;
+}
+
+.searchBox input {
+    height: 30px;
+    width: 100%;
+    max-width: 1200px;
+    padding: 5px;
+    font-size: 16px;
+    line-height: 30px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.searchBox input::-webkit-input-placeholder {
+    font-style: italic;
+    font-weight: 100;
+}
