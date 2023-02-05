@@ -48,16 +48,14 @@ export function MediaCard({data, imagePriority = false, favourites, index, favFu
             <div className='media-poster'>
                 {data.poster_path
                     ? (
-                    <Link to={`/movie/${data.id}-${replaceAllNonWords(data.title)}`}>
                         <img
-                            srcSet={`${getBaseImgPath(`/w342${data.poster_path}`)} 2x`}
-                            src={getBaseImgPath(`/w185${data.poster_path}`)}
+                            srcSet={`${getBaseImgPath(`/w780${data.poster_path}`)} 2x`}
+                            src={getBaseImgPath(`/w300${data.poster_path}`)}
                             alt={`${data.title} poster`}
-                            height={278}
-                            width={185}
+                            // height={278}
+                            // width={185}
                             {...(imageProps as any)}
                         />
-                    </Link>
                     )
                     : (
                         <div className="media-no-image">
@@ -86,8 +84,12 @@ export function MediaCard({data, imagePriority = false, favourites, index, favFu
                     </div>
                 }
                 <p className='media-info__description'>{data.overview}</p>
-                <Link to={`/movie/${data.id}-${replaceAllNonWords(data.title)}`} className='media-details'>Show
-                    more</Link>
+                <Link
+                    to={`/movie/${data.id}-${replaceAllNonWords(data.title)}`}
+                    className='media-details'
+                >
+                    Show more
+                </Link>
             </div>
         </div>
     )
