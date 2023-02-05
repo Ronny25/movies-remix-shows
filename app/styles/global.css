@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: #0f0f0f;
 }
 
 * {
@@ -30,12 +31,12 @@ body {
     padding: 15px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr));
-    grid-gap: 15px;
-    background: #f2f1ef;
+    grid-gap: 20px;
 }
 
 .media-list__expanded {
     margin: 0 -15px 50px;
+    background: #f2f1ef;
 }
 
 .media-no-image {
@@ -56,6 +57,5 @@ body {
     margin: 0 auto;
     padding-top: 25px;
     padding-bottom: 25px;
-    background: #f2f1ef;
     position: relative;
 }

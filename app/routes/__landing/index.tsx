@@ -36,8 +36,8 @@ export default function Home() {
             <SearchBox onChange={onChangeHandler}/>
             {popularMovies?.results?.length > 0 &&
                 <div className='container'>
-                    <h1 className='home-title'>Popular Movies</h1>
-                    <Link to='/favourites' className='toFavouritesLink'>Go to Favourites</Link>
+                    {/*<h1 className='home-title'>Popular Movies</h1>*/}
+                    {/*<Link to='/favourites' className='toFavouritesLink'>Go to Favourites</Link>*/}
                     <div className='media-list'>
                         {popularMovies.results.map((movie, index) => (
                             <MediaCard key={movie.id} data={movie} imagePriority={index <= 2}/>
